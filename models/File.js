@@ -35,10 +35,10 @@ fileSchema.post("save", async function(doc) {
 
         //send mail 
         let info = await transporter.sendMail({
-            from:`CodeHelp - by Babbar`,
+            from:`Sachin Singh`,
             to: doc.email,
             subject: "New File Uploaded on Cloudinary",
-            html:`<h2>Hello Jee</h2> <p>File Uploaded View here: <a href="${doc.imageUrl}">${doc.imageUrl}</a> </p>`,
+            html:`<h2>Radhe Radhe</h2> <p>File Uploaded View here: <a href="${doc.imageUrl}">${doc.imageUrl}</a> </p>`,
         })
         
         console.log("INFO", info);
